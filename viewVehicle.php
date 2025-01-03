@@ -58,7 +58,7 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['user_username'])) {
                         <td><?= htmlspecialchars($vehicle['EngineNumber']) ?></td>
                         <td><?= htmlspecialchars($vehicle['Model']) ?></td>
                         <td><?= htmlspecialchars($vehicle['Company']) ?></td>
-                        <td><?= htmlspecialchars($vehicle['Tyoe']) ?></td>
+                        <td><?= htmlspecialchars($vehicle['Type']) ?></td>
                     </tr>
                     <?php
                 }

@@ -19,7 +19,28 @@
         <a href="viewClient.php">View client</a><br>
         <a href="viewVehicle.php">View vehicles</a><br>
         <a href="viewContract.php">View contracts</a><br>
+        <a href="dashboard.php">View Dashboard</a><br>
         <a href="logout.php">Logout</a>
+
+        <br><br><br>
+        <?php if (isset($_GET['error'])) {?>
+            <p><?= htmlspecialchars($_GET['error']) ?></p>
+        <?php } 
+        
+        else if (isset($_GET['success'])) {?>
+            <p><?= htmlspecialchars($_GET['success']) ?></p>
+        <?php }?>
+        <form action="contract.php" method="post">
+            <input type="text" id="contractNumber" name="contractNumber" placeholder="Contract Number">
+            <input type="text" id="clientId" name="clientId" placeholder="Client Id">
+            <input type="text" id="vehicleId" name="vehicleId" placeholder="Vehicle Id">
+            <input type="text" id="vehiclePrice" name="vehiclePrice" placeholder="Vehicle Price">
+            <input type="text" id="balanceRemaining" name="balanceRemaining" placeholder="Balance Remaining">
+            <input type="date" id="dateStart" name="dateStart" placeholder="Date Start">
+            <input type="date" id="dateEnd" name="dateEnd" placeholder="Date End">
+            <input type="text" id="contractStatus" name="contractStatus" placeholder="Contract Status">
+            <input type="submit" value="Add Contract">
+        </form>
     </body>
     </html>
 <?php

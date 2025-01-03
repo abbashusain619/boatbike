@@ -27,7 +27,7 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['user_username'])) {
         <?php
         try {
             // Fetch all clients
-            $stmt = $conn->prepare("SELECT * FROM contracts");
+            $stmt = $conn->prepare("SELECT * FROM vehicles");
             $stmt->execute();
 
             // Check if any records are found
@@ -37,13 +37,12 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['user_username'])) {
             <thead>
                 <tr>
                     <th>S/N</th>
-                    <th>Contract Number</th>
-                    <th>Client Id</th>
-                    <th>Vehicle Id</th>
-                    <th>Balance Remaining</th>
-                    <th>DateStart</th>
-                    <th>DateEnd</th>
-                    <th>ContractStatus</th>
+                    <th>VRN</th>
+                    <th>ChassisNumber</th>
+                    <th>EngineNumber</th>
+                    <th>Model</th>
+                    <th>Company</th>
+                    <th>Type</th>
                 </tr>
             </thead>
             <tbody>

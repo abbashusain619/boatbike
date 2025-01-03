@@ -40,6 +40,7 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['user_username'])) {
                     <th>Contract Number</th>
                     <th>Client Id</th>
                     <th>Vehicle Id</th>
+                    <th>Vehicle Price</th>
                     <th>Balance Remaining</th>
                     <th>DateStart</th>
                     <th>DateEnd</th>
@@ -56,6 +57,7 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['user_username'])) {
                         <td><?= htmlspecialchars($contract['ContractNumber']) ?></td>
                         <td><?= htmlspecialchars($contract['ClientId']) ?></td>
                         <td><?= htmlspecialchars($contract['VehicleId']) ?></td>
+                        <td><?= htmlspecialchars($contract['VehiclePrice']) ?></td>
                         <td><?= htmlspecialchars($contract['BalanceRemaining']) ?></td>
                         <td><?= htmlspecialchars($contract['DateStart']) ?></td>
                         <td><?= htmlspecialchars($contract['DateEnd']) ?></td>

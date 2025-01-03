@@ -15,7 +15,7 @@
     <form action="login.php" method="post">
         <?php if (isset($_GET['error'])) {?>
             <p><?= htmlspecialchars($_GET['error']) ?></p>
-        <?php } ?>
+        <?php }?>
         <label for="username">Username</label>
         <input type="text" id="username" name="username" required>
         <label for="password">password</label>

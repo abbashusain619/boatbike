@@ -22,6 +22,21 @@
         <a href="dashboard.php">View Dashboard</a><br>
         <a href="logout.php">Logout</a>
 
+        <br><br><br>
+        <?php if (isset($_GET['error'])) {?>
+            <p><?= htmlspecialchars($_GET['error']) ?></p>
+        <?php } 
+        
+        else if (isset($_GET['success'])) {?>
+            <p><?= htmlspecialchars($_GET['success']) ?></p>
+        <?php }?>
+        <form action="client.php" method="post">
+            <input type="text" id="firstName" name="firstName" placeholder="First Name">
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+            <input type="text" id="homeAddress" name="homeAddress" placeholder="Home Address">
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+            <input type="submit" value="Add Client">
+        </form>
     </body>
     </html>
 <?php

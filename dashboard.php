@@ -23,7 +23,7 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['user_username'])) {
         <a href="logout.php">Logout</a>
 
         <br><br><br>
-        <h1>Client Table</h1>
+        <h1>Dashboard Table</h1>
         <?php
         try {
             // Fetch all clients

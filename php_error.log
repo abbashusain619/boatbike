@@ -1,0 +1,3 @@
+[03-Jan-2025 11:51:56 UTC] PHP Warning:  Undefined array key "Id" in C:\laragon\www\boatbike\updateVehicle.php on line 29
+[03-Jan-2025 11:53:31 UTC] PHP Warning:  Undefined array key "Id" in C:\laragon\www\boatbike\updateVehicle.php on line 29
+[03-Jan-2025 11:55:48 UTC] PHP Warning:  Undefined variable $id in C:\laragon\www\boatbike\updateVehicle.php on line 40

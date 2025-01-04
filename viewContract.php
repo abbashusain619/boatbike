@@ -10,6 +10,14 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['user_username'])) {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dashboard</title>
+
+        <style>
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .editable { cursor: pointer; }
+        .editable:hover { background-color: #f9f9f9; }
+    </style>
     </head>
     <body>
         <h1>Welcome <?=$_SESSION['user_username']?></h1>
@@ -17,13 +25,13 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['user_username'])) {
         <a href="addVehicle.php">Add vehicle</a><br>
         <a href="addContract.php">Add contract</a><br>
         <a href="viewClient.php">View client</a><br>
-        <a href="viewVehicle.php">View vehicles</a><br>
+        <a href="viewVehicles.php">View vehicles</a><br>
         <a href="viewContract.php">View contracts</a><br>
         <a href="dashboard.php">View Dashboard</a><br>
         <a href="logout.php">Logout</a>
 
         <br><br><br>
-        <h1>Client Table</h1>
+        <h1>Contract Table</h1>
         <?php
         try {
             // Fetch all clients
@@ -33,7 +41,7 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['user_username'])) {
             // Check if any records are found
             if ($stmt->rowCount() > 0) {
         ?>
-        <table border="1">
+        <table>
             <thead>
                 <tr>
                     <th>S/N</th>

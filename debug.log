@@ -1,0 +1,18 @@
+Array
+(
+    [id] => 3
+    [csrf_token] => 2737e99e1e4607b731a906f8a1b505df813db2e6ae1c41af483a13785258a386
+    [FirstName] => AliHusain
+    [LastName] => Mohammed
+    [HomeAddress] => Kisiju
+    [PhoneNumber] => +255789456235
+)
+Array
+(
+    [id] => 1
+    [csrf_token] => 2737e99e1e4607b731a906f8a1b505df813db2e6ae1c41af483a13785258a386
+    [FirstName] => Ricardo
+    [LastName] => Robert
+    [HomeAddress] => Kisiju
+    [PhoneNumber] => +255786254896
+)

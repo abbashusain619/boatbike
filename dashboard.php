@@ -17,7 +17,7 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['user_username'])) {
         <a href="addVehicle.php">Add vehicle</a><br>
         <a href="addContract.php">Add contract</a><br>
         <a href="viewClient.php">View client</a><br>
-        <a href="viewVehicle.php">View vehicles</a><br>
+        <a href="viewVehicles.php">View vehicles</a><br>
         <a href="viewContract.php">View contracts</a><br>
         <a href="dashboard.php">View Dashboard</a><br>
         <a href="logout.php">Logout</a>

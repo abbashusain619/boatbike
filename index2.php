@@ -46,7 +46,9 @@
           <div class="col-md-6 right">
 
             <form action="login.php" method="post">
-            
+            <?php if (isset($_GET['error'])) {?>
+              <p><?= htmlspecialchars($_GET['error']) ?></p>
+            <?php }?>
               <div class="input-box">
                   <header>Sign In</header>
                   <div class="input-field">
@@ -59,9 +61,9 @@
                       <label for="password">Password</label>
                   </div>
                   
-                  <?php if (isset($_GET['error'])) {?>
-              <p><?= htmlspecialchars($_GET['error']) ?></p>
-            <?php }?>
+                <?php if (isset($_GET['error'])) {?>
+                    <p><?= htmlspecialchars($_GET['error']) ?></p>
+                <?php}?>
 
                   <div class="input-field">
                       <input type="submit" 
